@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+    rel="stylesheet" />
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="search-container">
+      <input type="search" id="search-input" placeholder="Search Product Name Here..." />
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="filters">
+      <button class="button-value" onclick="filterProduct('all')">All</button>
+      <button class="button-value" onclick="filterProduct('Topwear')">Topwear</button>
+      <button class="button-value" onclick="filterProduct('Bottomwear')">Bottomwear</button>
+      <button class="button-value" onclick="filterProduct('Jacket')">Jacket</button>
+      <button class="button-value" onclick="filterProduct('Watch')">Watch</button>
+    </div>
+    <div id="products"></div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
